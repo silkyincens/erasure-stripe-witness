@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-20T22:43:36.252Z",
+  "title": "ErasureStripeWitness",
+  "kind": "independent_intelligent_contract",
+  "profileSeq": 8,
+  "contractAddress": "0xEf3f6e49b1c5c44B1aAcf08f3adF96b608716e39",
+  "transactionHash": "0xcc0a2b750c90bb49136b10b09a1f36ce98f3d55f9f5bb5356aa8df0358519dd2",
+  "sourceSha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb",
+  "network": "GenLayer Studio",
+  "chainId": 61999,
+  "constructorArgs": [],
+  "state": "FINALIZED",
+  "executionResult": "SUCCESS",
+  "executionMode": "NORMAL",
+  "leaderOnly": false,
+  "consensusResult": "MAJORITY_AGREE",
+  "value": 0,
+  "liveScope": "Constructor only; full real-source register/certify/activate/revoke/evaluate flow not exercised live.",
+  "publicSourceBytesVerified": false,
+  "onchainSourceSha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb"
+}

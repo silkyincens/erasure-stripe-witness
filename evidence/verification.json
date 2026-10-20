@@ -1,0 +1,49 @@
+{
+  "source": "erasure_stripe_witness.py",
+  "source_sha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb",
+  "genvm_release": "v0.2.12",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "stdlib": "py-lib-genlayer-std:11rhn002yfajawsz7fai6mykznbxkxs6l91iskj5cm82c92qhy3v",
+  "packages": {
+    "genlayer-test": "0.29.2",
+    "genvm-linter": "0.11.0",
+    "cloudpickle": "3.1.2",
+    "pytest": "9.1.1"
+  },
+  "checks": {
+    "tests": {
+      "exit_code": 0,
+      "passed": true
+    },
+    "lint": {
+      "exit_code": 0,
+      "passed": true
+    },
+    "schema": {
+      "exit_code": 0,
+      "passed": true
+    }
+  },
+  "live_consensus_tested": false,
+  "deployment": {
+    "at": "2026-10-20T22:43:36.252Z",
+    "title": "ErasureStripeWitness",
+    "kind": "independent_intelligent_contract",
+    "profileSeq": 8,
+    "contractAddress": "0xEf3f6e49b1c5c44B1aAcf08f3adF96b608716e39",
+    "transactionHash": "0xcc0a2b750c90bb49136b10b09a1f36ce98f3d55f9f5bb5356aa8df0358519dd2",
+    "sourceSha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb",
+    "network": "GenLayer Studio",
+    "chainId": 61999,
+    "constructorArgs": [],
+    "state": "FINALIZED",
+    "executionResult": "SUCCESS",
+    "executionMode": "NORMAL",
+    "leaderOnly": false,
+    "consensusResult": "MAJORITY_AGREE",
+    "value": 0,
+    "liveScope": "Constructor only; full real-source register/certify/activate/revoke/evaluate flow not exercised live.",
+    "publicSourceBytesVerified": false,
+    "onchainSourceSha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb"
+  }
+}

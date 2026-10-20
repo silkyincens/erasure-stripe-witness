@@ -1,0 +1,1 @@
+{"ok":true,"lint":{"ok":true,"passed":3},"validate":{"ok":true,"contract":"ErasureStripeWitness","methods":8,"view_methods":4,"write_methods":4,"ctor_params":0}}

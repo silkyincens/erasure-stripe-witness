@@ -1,0 +1,34 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+________ test_all_redundant_points_and_first_mismatch_cannot_activate _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x000001F0FBBFE840>
+
+    def test_all_redundant_points_and_first_mismatch_cannot_activate(direct_vm,direct_deploy):
+        c=deploy(direct_vm,direct_deploy);data=json.loads(BODY);data['shards'][2]['values'][1]=16;register(direct_vm,c,body(data));cert=c.certify('stripe',0);r=c.get_stripe('stripe')['result']
+>       assert r['status']=='INCONSISTENT' and r['first_mismatch']=={'x':4,'column':1,'expected':15,'observed':16} and r['data_sha256'] is None
+E       AssertionError: assert ('CONSISTENT' == 'INCONSISTENT'
+E         
+E         - INCONSISTENT
+E         ? --
+E         + CONSISTENT)
+
+tests\test_contract.py:36: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_contract.py::test_all_redundant_points_and_first_mismatch_cannot_activate
+1 failed, 42 deselected in 0.72s
+WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks
+INFO: Clearing artifacts directory: artifacts
+INFO: Using the following configuration:
+INFO:   RPC URL: http://127.0.0.1:4000/api
+INFO:   Selected Network: localnet
+INFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']
+INFO:   Selected chain type: localnet
+INFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury
+INFO:   Contracts directory: contracts
+INFO:   Artifacts directory: artifacts
+INFO:   Environment: .env
+INFO:   Default wait interval: 3000 ms
+INFO:   Default wait retries: 50
+INFO:   Leader only mode: False

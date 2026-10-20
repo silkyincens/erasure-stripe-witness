@@ -1,0 +1,1093 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                               [100%]
+================================== FAILURES ===================================
+_______ test_literal_coefficients_all_redundancy_and_active_evaluation ________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E2458A7A0>
+
+    def test_literal_coefficients_all_redundancy_and_active_evaluation(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);r=c.get_stripe('stripe')['result']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E2458A7A0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E244497F0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________________ test_finite_field_wrap_and_degree_two_inverse ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E244AB560>
+
+    def test_finite_field_wrap_and_degree_two_inverse(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);data={'version':1,'k':3,'shards':[{'x':4,'values':[27]},{'x':1,'values':[0]},{'x':3,'values':[14]},{'x':2,'values':[5]}]}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E244AB560>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E245478F0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________ test_all_redundant_points_and_first_mismatch_cannot_activate _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24614680>
+
+    def test_all_redundant_points_and_first_mismatch_cannot_activate(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY);data['shards'][2]['values'][1]=16;register(direct_vm,c,body(data));cert=c.certify('stripe',0);r=c.get_stripe('stripe')['result']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24614680>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24613EF0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+______________ test_source_permutation_has_same_canonical_result ______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24692700>
+
+    def test_source_permutation_has_same_canonical_result(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);c.certify('stripe',0);expected=c.get_stripe('stripe')['result'];data=json.loads(BODY);data['shards'].reverse()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24692700>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E245F3950>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________________ test_valid_max_dimensions_and_exact_body_cap _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24692480>
+
+    def test_valid_max_dimensions_and_exact_body_cap(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);data={'version':1,'k':8,'shards':[{'x':x,'values':[5]*16} for x in range(1,13)]};b=body(data);b+=b' '*(16384-len(b));register(direct_vm,c,b);c.certify('stripe',0);r=c.get_stripe('stripe')['result']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24692480>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E245F1CA0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_ test_full_shaped_forgery_is_rejected_by_independent_validator[coefficient] __
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E2478D580>
+kind = 'coefficient'
+
+    @pytest.mark.parametrize('kind',['coefficient','status','data-hash','basis','binding'])
+    def test_full_shaped_forgery_is_rejected_by_independent_validator(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);c.certify('stripe',0);packet=copy.deepcopy(c.get_stripe('stripe')['attestation'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E2478D580>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E2468AC00>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+____ test_full_shaped_forgery_is_rejected_by_independent_validator[status] ____
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E2482AA20>
+kind = 'status'
+
+    @pytest.mark.parametrize('kind',['coefficient','status','data-hash','basis','binding'])
+    def test_full_shaped_forgery_is_rejected_by_independent_validator(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);c.certify('stripe',0);packet=copy.deepcopy(c.get_stripe('stripe')['attestation'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E2482AA20>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E246FB4A0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+__ test_full_shaped_forgery_is_rejected_by_independent_validator[data-hash] ___
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E248CCAE0>
+kind = 'data-hash'
+
+    @pytest.mark.parametrize('kind',['coefficient','status','data-hash','basis','binding'])
+    def test_full_shaped_forgery_is_rejected_by_independent_validator(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);c.certify('stripe',0);packet=copy.deepcopy(c.get_stripe('stripe')['attestation'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E248CCAE0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E247FE4E0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+____ test_full_shaped_forgery_is_rejected_by_independent_validator[basis] _____
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E249563E0>
+kind = 'basis'
+
+    @pytest.mark.parametrize('kind',['coefficient','status','data-hash','basis','binding'])
+    def test_full_shaped_forgery_is_rejected_by_independent_validator(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);c.certify('stripe',0);packet=copy.deepcopy(c.get_stripe('stripe')['attestation'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E249563E0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E2468BE00>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+___ test_full_shaped_forgery_is_rejected_by_independent_validator[binding] ____
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E249EF9C0>
+kind = 'binding'
+
+    @pytest.mark.parametrize('kind',['coefficient','status','data-hash','basis','binding'])
+    def test_full_shaped_forgery_is_rejected_by_independent_validator(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);c.certify('stripe',0);packet=copy.deepcopy(c.get_stripe('stripe')['attestation'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E249EF9C0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24A02000>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________ test_validator_refetch_and_leader_failure_leave_registration _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24AA5260>
+
+    def test_validator_refetch_and_leader_failure_leave_registration(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);c.certify('stripe',0);mock(direct_vm,BODY+b' ');assert direct_vm.run_validator() is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24AA5260>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24AEB170>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_________ test_strict_stripe_schema_and_resource_limits[bool-version] _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24B2AA20>
+kind = 'bool-version'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24B2AA20>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24B744D0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+____________ test_strict_stripe_schema_and_resource_limits[bool-k] ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24BC80E0>
+kind = 'bool-k'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24BC80E0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24C09340>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+___________ test_strict_stripe_schema_and_resource_limits[small-k] ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24C61E40>
+kind = 'small-k'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24C61E40>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24C5E720>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+___________ test_strict_stripe_schema_and_resource_limits[large-k] ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24CFB880>
+kind = 'large-k'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24CFB880>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24CF78F0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________ test_strict_stripe_schema_and_resource_limits[no-redundancy] _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24D9CAE0>
+kind = 'no-redundancy'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24D9CAE0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24DC0C50>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+___________ test_strict_stripe_schema_and_resource_limits[too-many] ___________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24E2A2A0>
+kind = 'too-many'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24E2A2A0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24E95580>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+____________ test_strict_stripe_schema_and_resource_limits[zero-x] ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24E9FEC0>
+kind = 'zero-x'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24E9FEC0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24EFF020>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+___________ test_strict_stripe_schema_and_resource_limits[large-x] ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24F5D260>
+kind = 'large-x'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24F5D260>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24F9FDD0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_________ test_strict_stripe_schema_and_resource_limits[duplicate-x] __________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E24FEAA20>
+kind = 'duplicate-x'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E24FEAA20>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24EA6DE0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+____________ test_strict_stripe_schema_and_resource_limits[bool-x] ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E250A8220>
+kind = 'bool-x'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E250A8220>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24EC69F0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+__________ test_strict_stripe_schema_and_resource_limits[zero-width] __________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E251259E0>
+kind = 'zero-width'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E251259E0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E250C72C0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_____________ test_strict_stripe_schema_and_resource_limits[wide] _____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E251B71A0>
+kind = 'wide'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E251B71A0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E251E3EC0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________ test_strict_stripe_schema_and_resource_limits[unequal-width] _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E252789A0>
+kind = 'unequal-width'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E252789A0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25283CE0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_________ test_strict_stripe_schema_and_resource_limits[bool-symbol] __________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E252DA160>
+kind = 'bool-symbol'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E252DA160>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E2535F3E0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_______ test_strict_stripe_schema_and_resource_limits[negative-symbol] ________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E2537F920>
+kind = 'negative-symbol'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E2537F920>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25383B30>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_________ test_strict_stripe_schema_and_resource_limits[large-symbol] _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25429120>
+kind = 'large-symbol'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25429120>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E251E3830>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_____________ test_strict_stripe_schema_and_resource_limits[nan] ______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E254798A0>
+kind = 'nan'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E254798A0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24F325A0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________ test_strict_stripe_schema_and_resource_limits[duplicate-key] _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25523100>
+kind = 'duplicate-key'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25523100>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25529A30>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+____________ test_strict_stripe_schema_and_resource_limits[extra] _____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E257B8720>
+kind = 'extra'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E257B8720>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E257E65D0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_________ test_strict_stripe_schema_and_resource_limits[invalid-utf8] _________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25849F80>
+kind = 'invalid-utf8'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25849F80>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E2583BAA0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+__________ test_strict_stripe_schema_and_resource_limits[body-over] ___________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E258B3560>
+kind = 'body-over'
+
+    @pytest.mark.parametrize('kind',['bool-version','bool-k','small-k','large-k','no-redundancy','too-many','zero-x','large-x','duplicate-x','bool-x','zero-width','wide','unequal-width','bool-symbol','negative-symbol','large-symbol','nan','duplicate-key','extra','invalid-utf8','body-over'])
+    def test_strict_stripe_schema_and_resource_limits(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);data=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E258B3560>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E24C8C3B0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_______________ test_active_evaluation_strict_shape[True-[3,7]] _______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25970E00>
+x = True, values = '[3,7]'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25970E00>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E2535E780>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+________________ test_active_evaluation_strict_shape[-1-[3,7]] ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25A06980>
+x = -1, values = '[3,7]'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25A06980>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25A09850>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_______________ test_active_evaluation_strict_shape[257-[3,7]] ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25AB4220>
+x = 257, values = '[3,7]'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25AB4220>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25AF23F0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_______________ test_active_evaluation_strict_shape[0-[true,7]] _______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25B15800>
+x = 0, values = '[true,7]'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25B15800>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25B0BA10>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_________________ test_active_evaluation_strict_shape[0-[3]] __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25B97060>
+x = 0, values = '[3]'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25B97060>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25187A10>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_______________ test_active_evaluation_strict_shape[0-[3,257]] ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25C68680>
+x = 0, values = '[3,257]'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25C68680>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25C5FD70>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_______________ test_active_evaluation_strict_shape[0-[NaN,7]] ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25CF9EE0>
+x = 0, values = '[NaN,7]'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25CF9EE0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25D85DF0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+____________ test_active_evaluation_strict_shape[0-{"0":3,"1":7}] _____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25D6B4C0>
+x = 0, values = '{"0":3,"1":7}'
+
+    @pytest.mark.parametrize('x,values',[(True,'[3,7]'),(-1,'[3,7]'),(257,'[3,7]'),(0,'[true,7]'),(0,'[3]'),(0,'[3,257]'),(0,'[NaN,7]'),(0,'{"0":3,"1":7}')])
+    def test_active_evaluation_strict_shape(direct_vm,direct_deploy,x,values):
+>       c=deploy(direct_vm,direct_deploy);register(direct_vm,c);cert=c.certify('stripe',0);c.activate('stripe',1,cert);assert c.verify_shard('stripe',2,cert,x,values) is False
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25D6B4C0>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25DDB470>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_______ test_owner_cas_exact_receipt_cross_record_and_terminal_history ________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25E38D60>
+
+    def test_owner_cas_exact_receipt_cross_record_and_terminal_history(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);other=create_address('other')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:99: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25E38D60>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25D98DD0>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+_________________ test_pinned_namespace_and_lifetime_capacity _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000016E25E96160>
+
+    def test_pinned_namespace_and_lifetime_capacity(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000016E25E96160>
+
+    def deploy(vm,build):
+>       vm.warp('2026-10-21T00:00:00Z');c=build(str(ROOT/'erasure_stripe_witness.py'),sdk_version='v0.2.12');assert hasattr(c,'register'),'ErasureStripeWitness API not implemented';return c
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: ErasureStripeWitness API not implemented
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_erasure_stripe_witness.ErasureStripeWitness object at 0x0000016E25EB5580>>, 'register')
+
+tests\test_contract.py:12: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_contract.py::test_literal_coefficients_all_redundancy_and_active_evaluation
+FAILED tests/test_contract.py::test_finite_field_wrap_and_degree_two_inverse
+FAILED tests/test_contract.py::test_all_redundant_points_and_first_mismatch_cannot_activate
+FAILED tests/test_contract.py::test_source_permutation_has_same_canonical_result
+FAILED tests/test_contract.py::test_valid_max_dimensions_and_exact_body_cap
+FAILED tests/test_contract.py::test_full_shaped_forgery_is_rejected_by_independent_validator[coefficient]
+FAILED tests/test_contract.py::test_full_shaped_forgery_is_rejected_by_independent_validator[status]
+FAILED tests/test_contract.py::test_full_shaped_forgery_is_rejected_by_independent_validator[data-hash]
+FAILED tests/test_contract.py::test_full_shaped_forgery_is_rejected_by_independent_validator[basis]
+FAILED tests/test_contract.py::test_full_shaped_forgery_is_rejected_by_independent_validator[binding]
+FAILED tests/test_contract.py::test_validator_refetch_and_leader_failure_leave_registration
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[bool-version]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[bool-k]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[small-k]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[large-k]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[no-redundancy]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[too-many]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[zero-x]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[large-x]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[duplicate-x]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[bool-x]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[zero-width]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[wide]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[unequal-width]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[bool-symbol]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[negative-symbol]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[large-symbol]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[nan]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[duplicate-key]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[extra]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[invalid-utf8]
+FAILED tests/test_contract.py::test_strict_stripe_schema_and_resource_limits[body-over]
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[True-[3,7]]
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[-1-[3,7]]
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[257-[3,7]]
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[0-[true,7]]
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[0-[3]] - A...
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[0-[3,257]]
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[0-[NaN,7]]
+FAILED tests/test_contract.py::test_active_evaluation_strict_shape[0-{"0":3,"1":7}]
+FAILED tests/test_contract.py::test_owner_cas_exact_receipt_cross_record_and_terminal_history
+FAILED tests/test_contract.py::test_pinned_namespace_and_lifetime_capacity - ...
+42 failed in 4.22s
+WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks
+INFO: Using the following configuration:
+INFO:   RPC URL: http://127.0.0.1:4000/api
+INFO:   Selected Network: localnet
+INFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']
+INFO:   Selected chain type: localnet
+INFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury
+INFO:   Contracts directory: contracts
+INFO:   Artifacts directory: artifacts
+INFO:   Environment: .env
+INFO:   Default wait interval: 3000 ms
+INFO:   Default wait retries: 50
+INFO:   Leader only mode: False

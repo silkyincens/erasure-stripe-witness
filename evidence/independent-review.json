@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-20T21:47:27.271Z",
+  "reviewer": "/root",
+  "source_sha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb",
+  "result": "no_important_reproducible_issue_identified",
+  "scope": "Independent read-only frozen source, recorded actual SDK tests/full semantic/schema evidence, API and README review. Not a production audit or live consensus claim.",
+  "coreChecks": [
+    "GF(257) Lagrange interpolation uses distinct nonzero input points, exact bounded integer vectors and canonical basis.",
+    "Every declared point/column is re-evaluated, and the canonical first mismatch cannot activate an inconsistent stripe.",
+    "Current exact-certificate verification covers arbitrary field evaluation x including zero; it proves codeword membership, not authentic storage or error correction."
+  ],
+  "commonChecks": [
+    "Commit-pinned namespace and strict JSON/UTF-8/schema/byte hashes bounded before computation.",
+    "Independent validator fresh-fetches full bytes and recomputes complete domain-bound results; leader digest or success bit alone is insufficient.",
+    "Owner immutable registration, permissionless one-shot certification, exact CAS/certificate activation and terminal revocation.",
+    "Bounded lifetime registrations/history; certificate includes protocol, chain, contract, owner, record, source URL+hash, revisions and timestamps.",
+    "Synthetic mock test URLs remain separate from public_url:null. No fabricated live/source/deployment claims."
+  ],
+  "recordedSdkTests": 43,
+  "checksReexecutedByReviewer": false,
+  "sourceEditedByReviewer": false,
+  "liveMutationPerformed": false
+}

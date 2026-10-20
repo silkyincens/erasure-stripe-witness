@@ -1,0 +1,7 @@
+{
+  "kind": "original MIT synthetic example; local HTTP mocks only; no public source exists yet",
+  "test_url": "https://raw.githubusercontent.com/synthetic-local-fixture/public-demo/0000000000000000000000000000000000000000/erasure-stripe-witness.json",
+  "sha256": "ef7a4748cad5632a36818f1d01aa072c68a737513ecc5f1444099108f968e6de",
+  "public_url": null,
+  "live_source_verified": false
+}

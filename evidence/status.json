@@ -1,0 +1,22 @@
+{
+  "status": "local verified prototype; independent frozen-source root review closed",
+  "source_sha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb",
+  "direct_tests_passed": 43,
+  "exact_sdk_release": "v0.2.12",
+  "full_lint_semantic_passed": true,
+  "schema_passed": true,
+  "constructor_args": [],
+  "live": null,
+  "live_consensus_tested": false,
+  "deployment": null,
+  "publication": null,
+  "fixture_public_url": null,
+  "fixture_kind": "original MIT synthetic local HTTP mocks only",
+  "audited": false,
+  "ai_assisted": true,
+  "prototype": true,
+  "independent_review_evidence": "independent-review.json",
+  "independent_reviewer": "/root",
+  "source_changed_during_closeout": false,
+  "tests_rerun_during_closeout": false
+}

@@ -1,0 +1,8 @@
+{
+  "purpose": "Sensitivity check against deliberately weakened actual contract, not a production version",
+  "from": "for point in shards:",
+  "to": "for point in basis:",
+  "pytest_exit_code": 1,
+  "original_source_restored": true,
+  "restored_source_sha256": "194706749c4a179200c5422885414034f4f8216daf6560a12dbbcb2d0efdbbfb"
+}
